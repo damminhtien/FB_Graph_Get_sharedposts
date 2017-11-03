@@ -1,0 +1,17 @@
+body {
+    background: #9830b2;
+}
+
+div.container {
+    width: 80vw;
+    color: white;
+    margin-top: 20px;
+}
+
+#img{
+	width: 100%;
+}
+
+p{
+	font-size: 25px;
+}
