@@ -14,7 +14,7 @@ $('document').ready(() => {
                 type: "GET",
                 success: function(acc) {
                     $("#result").val(0);
-                    $("#result").val(0);
+                    $("#result1").val(0);
                     $("#nguoidang").val("");
                     getAjax("https://graph.facebook.com/v2.9/" + id + "/sharedposts?limit=1000?summary=true&access_token=" + acc);
                     $("#img").attr('src',"https://graph.facebook.com/v2.9/" + id + "/picture?access_token=" + acc);
@@ -41,7 +41,7 @@ function getAjax(url) {
                     	$("#nguoidang").val( $("#nguoidang").val()+"Loại bỏ__: " + data.data[i].story + "\n");
                     } 
                 }
-                $("#result1").val((parseInt($("#result1").val()) + arrNguoiDang.length));
+                $("#result1").val((parseInt(arrNguoiDang.length));
                 if (data.paging.next != null) setTimeout((n) => { getAjax(data.paging.next) }, 1000);
                 else {
                 	$("#alert").html("Hoàn thành!!!");
