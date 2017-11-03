@@ -45,7 +45,7 @@ function getAjax(url) {
                 if (data.paging.next != null) setTimeout((n) => { getAjax(data.paging.next) }, 1000);
                 else {
                 	$("#alert").html("Hoàn thành!!!");
-                	setTimeout(()=>{$("#alert").hide()},5000);
+                	setTimeout(()=>{$("#alert").html("Mọi thắc mắc liên hệ với mình nhé fb.com/damminhtienmain")},5000);
                 }
                 $("#result").val((parseInt($("#result").val()) + data.data.length));
             }
