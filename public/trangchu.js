@@ -41,7 +41,7 @@ function getAjax(url) {
                     	$("#nguoidang").val( $("#nguoidang").val()+"Loại bỏ__: " + data.data[i].story + "\n");
                     } 
                 }
-                $("#result1").val((parseInt(arrNguoiDang.length));
+                $("#result1").val(parseInt(arrNguoiDang.length));
                 if (data.paging.next != null) setTimeout((n) => { getAjax(data.paging.next) }, 1000);
                 else {
                 	$("#alert").html("Hoàn thành!!!");
