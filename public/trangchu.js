@@ -3,7 +3,8 @@ $('document').ready(() => {
 	$(".ketqua").hide();
 	$("#alert").hide();
     $("#btnSubmit").click(() => {
-    	var arrNguoiDang = [];
+    	arrNguoiDang = [];
+    	$("#result1").val(0);
     	$("#alert").show();
     	$("#alert").html("Đợi giây lát");
         var id = $("#idAnh").val();
